@@ -1,0 +1,7 @@
+.clicked{
+  scale: 1.5;
+}
+
+.notClicked{
+  scale: 1;
+}
