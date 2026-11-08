@@ -1,9 +1,10 @@
-*{
+* {
   align-items: center;
   box-sizing: border-box;
   cursor: default;
 }
-.entire-section{
+
+.entire-section {
   height: 50px;
   width: 100dvw;
   background-color: #18191C;
@@ -14,47 +15,10 @@
   justify-content: space-between;
 }
 
-
-.entire-section > :first-child{ 
-  width: 113.77px;
+.entire-section> :first-child {
+  margin-left: 15px;
 }
 
-
-
-.firstDive{
-  margin-left: 13.5px;
+.entire-section> :nth-child(3) {
+  margin-right: 15px;
 }
-
-
-.everyWrapperTwo{
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  margin-right: 13.5px;
-  gap: 15px;
-  justify-content: right;
-  
-}
-
-.openClicker{
-  display: flex;
-  height: 50px;
-}
-
-
-.openClicker > *:hover{
-  filter: brightness(1.350);
-}
-
-.openClicker > *{
-
-  height: 50px;
-  width: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-
-}
-
-

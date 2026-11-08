@@ -1,0 +1,8 @@
+.everyWrapperTwo {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 15px;
+  justify-content: right;
+
+}

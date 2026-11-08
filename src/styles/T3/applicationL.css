@@ -1,11 +1,15 @@
-img{
+img {
   display: block;
 }
-.faceImage{
+
+.faceImage {
   width: 35px;
   height: 35px;
   border-radius: 50%;
   filter: brightness(1.2);
-
 }
 
+.faceImageClicked {
+  width: 500px;
+  height: 500px;
+}
