@@ -3,12 +3,10 @@ import { Dumbell } from "./dumbbell.jsx";
 import "../../../styles/T3/AllApps.css";
 
 
-f
 export const AllApps = () => {
   const items = [
     { id: 1, name: "hand", component: <FaceImage /> },
     { id: 2, name: "dumbbell", component: <Dumbell /> }
-
   ];
 
 
