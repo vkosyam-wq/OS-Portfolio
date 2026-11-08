@@ -2,22 +2,20 @@ import { FaceImage } from "./portfolio.jsx";
 import { Dumbell } from "./dumbbell.jsx";
 import "../../../styles/T3/AllApps.css";
 
-
 export const AllApps = () => {
-  const items = [
+  const all = [
     { id: 1, name: "hand", component: <FaceImage /> },
     { id: 2, name: "dumbbell", component: <Dumbell /> }
   ];
 
-
   return (
+    <div className="allAppsSection">
 
-    <>
-      {items.map((item) => (
-        <div key={item.id}>{item.component}</div>
-      ))}
-    </>
+      {
+        all.map((Item) => (
+          <div key={Item.id}>{Item.component}</div>
+        ))
+      }
+    </div>
   )
-
-
 }
