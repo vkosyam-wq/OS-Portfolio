@@ -9,7 +9,17 @@ img {
   filter: brightness(1.2);
 }
 
-.faceImageClicked {
-  width: 500px;
-  height: 500px;
+
+
+/*Psuedo class, .clicked is parent*/
+.clicked::before {
+  content: "";
+  position: absolute;
+
+  /*In terms of the taskBar*/
+  left: 15px;
+  top: 0;
+  width: 35px;
+  height: 4px;
+  background-color: rgb(61, 174, 233);
 }
