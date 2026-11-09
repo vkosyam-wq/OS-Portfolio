@@ -1,0 +1,24 @@
+* {
+  align-items: center;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+.entire-section {
+  height: 50px;
+  width: 100dvw;
+  background-color: #18191C;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.entire-section> :first-child {
+  margin-left: 15px;
+}
+
+.entire-section> :nth-child(3) {
+  margin-right: 15px;
+}
