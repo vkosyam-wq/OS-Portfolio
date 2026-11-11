@@ -6,12 +6,12 @@ export const Time = () => {
 
   useEffect(() => {
 
-    function updateTime(){
+    function updateTime() {
       setInterval(() => {
         setTime(new Date());
       }, 1000)
     }
-    
+
 
     const timeDif = 1000 - time.getMilliseconds();
     setTimeout(updateTime, timeDif);

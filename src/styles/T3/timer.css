@@ -1,15 +1,14 @@
-.timeAndDate > *{
-  font-family: "Noto Sans"; 
+.timeAndDate>* {
+  font-family: "Noto Sans";
   line-height: 105%;
   color: #FCFCFC;
   font-weight: 400;
 }
 
-
-.timeAndDate > :first-child{
+.timeAndDate> :first-child {
   font-size: 17px;
 }
 
-.timeAndDate > :nth-child(2){
+.timeAndDate> :nth-child(2) {
   font-size: 13px;
 }
