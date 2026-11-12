@@ -4,20 +4,26 @@ import { Battery } from "./batteryBar.jsx";
 import "../../../styles/T3/AllUt.css";
 import { useState } from "react";
 export const AllUtilities = () => {
-  const [clicked, setClicked] = useState(false);
+  const [clicker, setClicked] = useState(false);
   const all = [
-    { id: 1, name: "timer", component: <Time />, clickedName: "timerClicked" },
-    { id: 2, name: "modeToggle", component: <DarkLight />, clickedName: "DarkLightClicked" },
-    { id: 3, name: "batteryBar", component: <Battery />, clickedName: "batteryClicked" }
+    { id: 1, name: "timer", component: <Time /> },
+    { id: 2, name: "modeToggle", component: <DarkLight /> },
+    { id: 3, name: "batteryBar", component: <Battery /> }
   ];
+
 
   return (
     <div className="everyWrapperTwo">
       {
         all.map((Item) => (
-          <div key={Item.id} onClick={() => setClicked(!clicked)} className={clicked ? Item.clickedName : Item.name}>{Item.component}</div>
+          <div key={Item.id} className={clicker[Item.id] ? "clicker" : undefined}
+            onClick={() => setClicked(prev => ({
+              ...prev, [Item.id]: !prev[Item.id]
+            }))}>
+            {Item.component}
+          </div>
         ))
       }
-    </div>
+    </div >
   )
 }

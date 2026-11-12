@@ -1,24 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
 .everyWrapperTwo {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   gap: 15px;
   justify-content: right;
-
 }
 
-.timer {
-  margin-block: 500px;
+.clicker {
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
 }
 
-.timerClicked {
+.clicker::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 2px;
+  width: 100%;
   background-color: blue;
-}
-
-.DarkLightClicked {
-  background-color: green;
-}
-
-.modeToggle {
-  background-color: orange;
 }
