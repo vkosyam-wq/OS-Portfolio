@@ -6,7 +6,8 @@ import "../../../styles/T3/AllApps.css";
 export const AllApps = () => {
   const all = [
     { id: 1, name: "hand", component: <FaceImage /> },
-    { id: 2, name: "dumbbell", component: <Dumbell /> }
+    { id: 2, name: "dumbbell", component: <Dumbell /> },
+    { id: 3, name: undefined, component: undefined }
   ];
 
   return (
