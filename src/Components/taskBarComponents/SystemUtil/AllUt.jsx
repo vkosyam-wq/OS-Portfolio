@@ -38,8 +38,9 @@ export const AllUtilities = () => {
         all.map((Item) => (
           <div key={Item.id} className={clicker[Item.id] ? "clicker" : undefined}
             onClick={(event) => {
+              s
               event.stopPropagation();
-              setClicked(prev => prev[Item.id] ? {} : prev[Item.id]: true)
+              setClicked(prev => prev[Item.id] ? {} : prev[Item.id]: true })
 
             }}>
 
