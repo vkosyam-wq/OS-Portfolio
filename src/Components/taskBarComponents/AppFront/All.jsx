@@ -1,4 +1,3 @@
-import React from "react";
 import { FaceImage } from "./portfolio.jsx";
 import { Dumbell } from "./dumbbell.jsx";
 import "../../../styles/T3/AllApps.css";
