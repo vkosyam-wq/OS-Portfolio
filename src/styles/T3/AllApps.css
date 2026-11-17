@@ -1,11 +1,9 @@
 .allAppsSection {
   display: flex;
-
 }
 
 
 .allAppsSection>* {
-
   height: 50px;
   width: 50px;
   display: flex;
@@ -13,7 +11,6 @@
   justify-content: center;
 }
 
-
-.allAppsSection>*:hover {
-  filter: brightness(1.350);
+.allAppsSection>.clickedApp {
+  background-color: #2D617E
 }
