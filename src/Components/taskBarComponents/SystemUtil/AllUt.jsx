@@ -2,7 +2,7 @@ import { Time } from "./timer.jsx";
 import { DarkLight } from "./brightDark.jsx";
 import { Battery } from "./batteryBar.jsx";
 import "../../../styles/T3/AllUt.css";
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 export const AllUtilities = () => {
   const [clicker, setClicked] = useState({});
   const all = [
@@ -12,47 +12,24 @@ export const AllUtilities = () => {
   ];
 
 
-  const stateRef = useRef(null);
 
-  useEffect(() => {
-
-    const removeClick = (e) => {
-      if (!stateRef.current.contains(e.target)) {
-        setClicked({});
-      }
-    }
-
-
-    document.addEventListener("click", removeClick);
-
-
-    return () => {
-      document.removeEventListener("click", removeClick);
-    }
-
-  }, [])
 
   return (
-    <div className="everyWrapperTwo" ref={stateRef} onClick={() => setClicked({})} >
+    <div className="everyWrapperTwo">
       {
         all.map((Item) => (
           <div key={Item.id} className={clicker[Item.id] ? "clicker" : undefined}
-            onClick={(event) => {
-              s
-              event.stopPropagation();
-              setClicked(prev => prev[Item.id] ? {} : prev[Item.id]: true })
-
-            }}>
+            onClick={() => setClicked(prev => ({
+              ...prev,
+              [Item.id]: !prev[Item.id]
+            }))}>
 
 
 
-
-
-
-      {Item.component}
-    </div>
-  ))
-}
+            {Item.component}
+          </div>
+        ))
+      }
     </div >
   )
 }
