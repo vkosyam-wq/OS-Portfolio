@@ -8,6 +8,7 @@ export const AllApps = () => {
     { id: 2, name: "dumbbell", component: <Dumbell /> },
   ];
 
+
   const [clickedApp, setClickedApp] = useState({});
   return (
     <div className="allAppsSection">
