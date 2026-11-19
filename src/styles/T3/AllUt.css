@@ -7,10 +7,10 @@
   flex-direction: row-reverse;
   align-items: center;
   gap: 15px;
-  justify-content: right;
+  justify-content: flex-start;
 }
 
-.clicker {
+.everyWrapperTwo>* {
   position: relative;
   height: 50px;
   display: flex;
@@ -21,8 +21,7 @@
   content: "";
   position: absolute;
   top: 0px;
-  left: 0px;
-  height: 4px;
+  height: 3px;
   width: 100%;
-  background-color: rgb(61, 174, 233);
+  background-color: #3DAEE9;
 }

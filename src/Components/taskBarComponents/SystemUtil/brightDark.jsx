@@ -7,8 +7,8 @@ export const DarkLight = () => {
       viewBox="-1.6 -1.6 19.2 19.2"
       fill="#dbdbdb"
       style={{
-        width: "200px",
-        height: "200px",
+        width: "20px",
+        height: "20px",
         color: "rgb(219, 219, 219)"
       }}
       stroke="#dbdbdb"
