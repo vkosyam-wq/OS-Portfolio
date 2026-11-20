@@ -1,7 +1,7 @@
 import { FaceImage } from "./portfolio.jsx";
 import { Dumbell } from "./dumbbell.jsx";
 import "../../../styles/T3/AllApps.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 export const AllApps = () => {
   const all = [
     { id: 1, name: "hand", component: <FaceImage /> },
@@ -18,7 +18,7 @@ export const AllApps = () => {
             onClick={() => setClickedApp(prev => ({
               ...prev,
               [Item.id]: true
-            }))}>{Item.component}</div>
+            }))} isClicked={true}>{Item.component}</div>
         ))
       }
     </div >

@@ -1,6 +1,6 @@
 export const Portfolio = () => {
   return (
-    <div>H</div>
+    <div>Hello, you clicked me</div>
   )
 
 }
