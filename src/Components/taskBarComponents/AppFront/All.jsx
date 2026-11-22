@@ -19,6 +19,7 @@ export const AllApps = () => {
         all.map((Item) => (
           <div key={Item.id} className={clickedApp[Item.id] ? "clickedApp" : ""}
             onClick={() => {
+              x
               setClickedApp(prev => ({
                 ...prev,
                 [Item.id]: true
