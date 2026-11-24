@@ -2,8 +2,9 @@ import { FaceImage } from "./portfolio.jsx";
 import { Dumbell } from "./dumbbell.jsx";
 import { Portfolio } from "../../popoverComponents/techPortfolio.jsx";
 import { Game } from "../../popoverComponents/Game.jsx";
+import { AllPopovers } from "../../popoverComponents/AllPopovers.jsx";
 import "../../../styles/T3/AllApps.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 export const AllApps = () => {
   const all = [
     { id: 1, name: "hand", component: <FaceImage />, popover: <Portfolio /> },
@@ -28,11 +29,8 @@ export const AllApps = () => {
                 ...prev,
                 [Item.id]: !prev[Item.id]
               }))
-            }}>{Item.component}
-            {clickedPopover[Item.id] && Item.popover}
-          </div>
-        ))
-      }
+            }}>{Item.component}</div>
+        ))}
     </div >
   )
 }
